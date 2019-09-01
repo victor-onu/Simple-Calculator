@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<style>
+	input{width: 100px;
+		height:80px;
+		font-size: 200%;}
+
+	.high {height:160px;
+		}
+	style: "height = 200px"
+</style>
+</head>
+
+<body style = "background-color : gold">
+	
+	<form name = "calculator">
+		<table style = "background-color : grey">
+		<tr>
+			<td>
+			<input style = "width: 500px" type = "text" name = "display" id = "display" disabled >				
+			</td>
+		</tr>
+		</table>
+
+		<table >
+		<tr>
+			<td>
+				<input type = "button" name = "one" value = "1" onclick = "calculator.display.value += '1'">
+			</td>
+
+			<td>
+				<input type = "button" name = "two" value = "2" onclick = "calculator.display.value += '2'">
+			</td>
+
+			<td>
+				<input type = "button" name = "three" value = "3" onclick = "calculator.display.value += '3'">
+			</td>
+
+			<td>
+				<input type = "button" name = "plus" value = "+" onclick = "calculator.display.value += '+'">
+			</td>
+	
+		</tr>
+
+		<tr>
+			<td>
+				<input type = "button" name = "four" value = "4" onclick = "calculator.display.value += '4'">
+			</td>
+			
+			<td>
+				<input type = "button" name = "five" value = "5" onclick = "calculator.display.value += '5'">
+			</td>
+
+			<td>
+				<input type = "button" name = "six" value = "6" onclick = "calculator.display.value += '6'">
+			</td>
+
+			<td>
+				<input type = "button" name = "minus" value = "-" onclick = "calculator.display.value += '-'">
+			</td>
+	
+		</tr>
+
+		<tr>
+			<td>
+				<input type = "button" name = "seven" value = "7" onclick = "calculator.display.value += '7'">
+			</td>
+			
+			<td>
+				<input type = "button" name = "eight" value = "8" onclick = "calculator.display.value += '8'">
+			</td>
+
+			<td>
+				<input type = "button" name = "nine" value = "9" onclick = "calculator.display.value += '9'">
+			</td>
+
+			<td>
+				<input type = "button" name = "multiply" value = "*" onclick = "calculator.display.value += '*'">
+			</td>
+			
+			<td rowspan = "4"  >
+				<input   class = "high" style = "background-color:green" type = "button" name = "equals-to" value = "=" onclick = "calculator.display.value = eval(calculator.display.value)">
+			</td>
+	
+		</tr>
+
+		<tr>
+			<td>
+				<input style = "background-color: red" type = "button" name = "clear" value = "c" onclick = "calculator.display.value = ''">
+			</td>
+			
+			<td>
+				<input type = "button" name = "zero" value = "0" onclick = "calculator.display.value += '0'">
+			</td>
+
+			<td>
+				<input type = "button" name = "point" value = "." onclick = "calculator.display.value += '.'">
+			</td>
+
+
+			<td>
+				<input type = "button" name = "divide" value = "/" onclick = "calculator.display.value += '/'">
+			</td>
+
+		<tr>	
+		</tr>
+
+		</tr>	
+
+		</table>
+	<form>
+	
+</body>
+</html>
